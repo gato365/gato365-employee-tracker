@@ -37,4 +37,15 @@ employeesDBQuestions = [
 
 inquirer.prompt(employeesDBQuestions).then((dataEDBQuestions) => {
     console.log(dataEDBQuestions.userDecisionAction);
+    console.log(dataEDBQuestions.enterData);
 });
+
+
+
+
+
+// When starting up MySQL2
+// Step 1: Run "mysql -u root -p" (Question - Why do we do this?; Current Answer - Login Name)
+// Step 2: Enter Password
+// Step 3: When in you can do the following:
+      // CREATE DATABASE "name of data base"

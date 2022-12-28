@@ -20,6 +20,14 @@ CREATE TABLE roles (
 );
 
 -- Employees Table --
-CREATE TABLE department ();
+CREATE TABLE department (
+    employee_id INT,
+    first_name VARCHAR(30),
+    last_name VARCHAR(30),
+    job_title VARCHAR(100),
+    department_name VARCHAR(100),
+    salary INT,
+    manager_report_to VARCHAR(200)
+);
 
 
