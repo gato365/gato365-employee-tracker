@@ -6,28 +6,27 @@ USE company_db;
 
 -- Departments Table --
 CREATE TABLE department (
-    department_name VARCHAR(100),
-    departmen_id INT
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(30) 
 );
 
 
 -- Roles Table --
-CREATE TABLE roles (
-    job_title VARCHAR(100),
-    role_id INT,
-    department_role_belongs VARCHAR(100),
-    role_salary INT
+CREATE TABLE role (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(30),
+    salary DECIMAL,
+    department_id INT 
 );
 
 -- Employees Table --
-CREATE TABLE department (
-    employee_id INT,
+CREATE TABLE employee (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(30),
     last_name VARCHAR(30),
-    job_title VARCHAR(100),
-    department_name VARCHAR(100),
-    salary INT,
-    manager_report_to VARCHAR(200)
+    role_id INT,
+    manager_id INT
 );
+
 
 
